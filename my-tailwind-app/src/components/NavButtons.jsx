@@ -1,13 +1,13 @@
-import HeaderButtonMed from "./HeaderButtonMed";
+import HeaderButton from "./HeaderButton";
 
 const NavButtons = () => {
   return (
         <div className="flex items-center gap-[16px]">
             {/* TO FUTURE SELF, CHANGE UP LINKS AND ROUTERS */}
-            <HeaderButtonMed title="About" to="/about"/>
-            <HeaderButtonMed title="Talents"/> 
-            <HeaderButtonMed title="Contact"/>
-            <HeaderButtonMed title="News n' Tweets" to="https://x.com/beedengumi"/>
+            <HeaderButton variant="med" to="/about"> About</HeaderButton>
+            <HeaderButton variant="med"> Talents</HeaderButton>
+            <HeaderButton variant="med"> Contact</HeaderButton>
+            <HeaderButton variant="med" to="https://x.com/beedengumi"> News n' Tweets</HeaderButton>
         </div>
   );
 };
