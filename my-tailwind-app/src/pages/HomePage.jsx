@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Make sure Link is imported
 import { useAnimationState } from '../App';
 import Transition from '../components/Transition';
+import NavBar from '../components/NavBar';
 
 const HomePage = () => {
     const [count, setCount] = useState(0);
@@ -16,6 +17,16 @@ const HomePage = () => {
 
     return (
         <Transition playEnterAnimation={playAnimation} playExitAnimation={playAnimation}>
+            <NavBar className="fixed top-0 left-0 w-full z-50"/>
+            <img src='BannerArt.png' className='w-full pt-[50px]'></img>
+            <div class="flex h-[538px] py-4 flex-col items-center gap-[25px] shrink-0 self-stretch 
+                bg-[linear-gradient(180deg,#EEC33D_59.3%,#FFF_93.72%)]">
+                <div class="flex w-[1024px] h-[84px] justify-center items-center gap-2 shrink-0 rounded-[26px]">
+                    <p class="text-[#322D2B] font-inter text-[64px] not-italic font-bold leading-normal">
+                    BUZZING ALL OVER THE PLACE
+                    </p>
+                </div>
+            </div>
             <div className="min-h-screen w-full bg-white dark:bg-zinc-900 grid place-items-center font-sans p-4">
                 <main className="max-w-7xl mx-auto p-8 flex flex-col items-center">
                     <img src="BeeLogo.png" alt="Bee Logo" className="w-[150px] h-[150px] rounded-[30px]"/>     
@@ -43,7 +54,7 @@ const HomePage = () => {
                     </Link>
 
                     <p className="mt-8 text-zinc-500 text-center">
-                        Website being developed by [ <code className="rounded bg-zinc-200 px-1.5 py-1 font-mono text-sm dark:bg-zinc-700">Rudy (REKAA) Orozco</code> ]
+                        Website being developed by [ <code className="rounded bg-zinc-200 px-1.5 py-1 font-mono text-sm dark:bg-zinc-700">REKAA_85</code> ]
                     </p>
                 </main>
             </div>
